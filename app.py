@@ -3,7 +3,8 @@ import gradio as gr
 from transformers import pipeline
 
 classifier =pipeline(
-                    "sentiment-analysis"
+                    "sentiment-analysis",
+                    model="philschmid/MiniLM-L6-H384-uncased-sst2"
                      )
 
 def check(text):
